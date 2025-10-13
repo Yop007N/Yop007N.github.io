@@ -41,6 +41,10 @@ function getLanguageColor(language) {
 function createProjectCard(repo) {
     const isFeatured = featuredProjects.includes(repo.name);
 
+    // Usar la descripción del repositorio o un fallback genérico
+    const description = repo.description ||
+                       (repo.language ? `Proyecto desarrollado principalmente en ${repo.language}` : 'Proyecto de desarrollo');
+
     return `
         <div class="project-card ${isFeatured ? 'featured' : ''}">
             <div class="project-content">
@@ -49,7 +53,7 @@ function createProjectCard(repo) {
                     ${isFeatured ? '<span class="featured-badge">⭐ Destacado</span>' : ''}
                 </h3>
                 <p class="project-description">
-                    ${repo.description || 'Proyecto de desarrollo en ' + (repo.language || 'múltiples tecnologías')}
+                    ${description}
                 </p>
                 ${repo.language ? `
                     <div class="project-tech">
@@ -62,6 +66,7 @@ function createProjectCard(repo) {
                     ${repo.stargazers_count > 0 ? `<span>⭐ ${repo.stargazers_count}</span>` : ''}
                     ${repo.forks_count > 0 ? `<span>🔄 ${repo.forks_count}</span>` : ''}
                     ${repo.size ? `<span>📦 ${(repo.size / 1024).toFixed(1)} MB</span>` : ''}
+                    ${repo.updated_at ? `<span>📅 ${new Date(repo.updated_at).toLocaleDateString('es-PY')}</span>` : ''}
                 </div>
                 <div class="project-links">
                     <a href="${repo.html_url}" target="_blank" class="project-link">
