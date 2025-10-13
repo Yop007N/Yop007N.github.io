@@ -32,6 +32,11 @@ const featuredProjects = [
     'biblioteca-front-ang'
 ];
 
+// Repositorios a excluir (no son propios o son privados)
+const excludedRepos = [
+    'Orrey-System'
+];
+
 // Función para obtener el color del lenguaje
 function getLanguageColor(language) {
     return languageColors[language] || '#8b949e';
@@ -89,11 +94,12 @@ async function loadProjects() {
         const response = await fetch(GITHUB_API);
         const repos = await response.json();
 
-        // Filtrar repositorios válidos (excluir forks y repo de perfil)
+        // Filtrar repositorios válidos (excluir forks, repo de perfil y repos no propios)
         const validRepos = repos.filter(repo =>
             !repo.fork &&
             repo.name !== GITHUB_USERNAME &&
-            repo.name !== `${GITHUB_USERNAME}.github.io`
+            repo.name !== `${GITHUB_USERNAME}.github.io` &&
+            !excludedRepos.includes(repo.name)
         );
 
         // Actualizar contador de proyectos
