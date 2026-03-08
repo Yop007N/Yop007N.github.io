@@ -3,177 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Enrique B. - Full-Stack Developer especializado en Angular, NestJS y PostgreSQL">
-    <title>Enrique B. | Full-Stack Developer</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Portfolio profesional de Enrique Bobadilla: backend, full stack, IoT y arquitectura de software.">
+    <title>Enrique Bobadilla | Backend and Full Stack Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">Enrique B.</div>
-            <ul class="nav-menu">
-                <li><a href="#hero">Inicio</a></li>
-                <li><a href="#about">Sobre Mí</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="bg-shape bg-shape-a"></div>
+    <div class="bg-shape bg-shape-b"></div>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Hola, soy <span class="highlight">Enrique Junior Bobadilla Ruiz Díaz</span></h1>
-                <p class="hero-subtitle">Full Stack Developer - Backend Specialist</p>
-                <p class="hero-description">
-                    Especializado en crear aplicaciones web y móviles escalables con Node.js, TypeScript, React y arquitecturas cloud. Más de 3 años de experiencia en desarrollo de APIs escalables y soluciones empresariales.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
-                    <a href="https://github.com/Yop007N" target="_blank" class="btn btn-secondary">GitHub</a>
-                </div>
-            </div>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="#hero" class="brand">Enrique Bobadilla</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#about">Perfil</a></li>
+                    <li><a href="#skills">Stack</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
+    </header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">Sobre Mí</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Soy un desarrollador Full-Stack apasionado por crear soluciones tecnológicas que resuelven problemas reales.
-                        Con experiencia en el desarrollo de aplicaciones empresariales, me especializo en arquitecturas escalables
-                        y código limpio.
+    <main>
+        <section id="hero" class="hero section">
+            <div class="container hero-grid">
+                <div class="hero-copy fade-up">
+                    <p class="eyebrow">Backend and Full Stack Engineer</p>
+                    <h1>Construyo APIs robustas y plataformas web listas para produccion.</h1>
+                    <p class="hero-lead">
+                        Especializado en Node.js, TypeScript, Java/Spring, PostgreSQL e integraciones IoT.
+                        Enfocado en arquitectura mantenible, seguridad y entrega continua.
                     </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#projects">Ver proyectos</a>
+                        <a class="btn btn-ghost" href="https://github.com/Yop007N" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                    <div class="hero-links">
+                        <a href="mailto:enribobadill96@gmail.com">enribobadill96@gmail.com</a>
+                        <span>Ciudad del Este, Paraguay</span>
+                        <span>Disponible remoto</span>
+                    </div>
+                </div>
+                <aside class="hero-panel fade-up">
+                    <h2>Valor que aporto</h2>
+                    <ul>
+                        <li>APIs con validaciones, auth y observabilidad.</li>
+                        <li>Frontend + backend con limites claros por dominio.</li>
+                        <li>Pipelines IoT y dashboards operativos en tiempo real.</li>
+                        <li>Repositorios con estandares de colaboracion y CI.</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container stats-grid fade-up">
+                <article class="stat-card">
+                    <h3 id="projects-count">0+</h3>
+                    <p>Repositorios publicados</p>
+                </article>
+                <article class="stat-card">
+                    <h3>3+ anios</h3>
+                    <p>Experiencia en desarrollo</p>
+                </article>
+                <article class="stat-card">
+                    <h3>100%</h3>
+                    <p>Foco en calidad de entrega</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section section-muted">
+            <div class="container">
+                <header class="section-header fade-up">
+                    <p class="eyebrow">Stack principal</p>
+                    <h2>Tecnologias con las que trabajo en produccion</h2>
+                </header>
+                <div class="skills-grid">
+                    <article class="skill-block fade-up">
+                        <h3>Backend</h3>
+                        <p>Node.js, TypeScript, NestJS, Java, Spring Boot, Express.</p>
+                    </article>
+                    <article class="skill-block fade-up">
+                        <h3>Frontend</h3>
+                        <p>React, Angular, Ionic, Tailwind CSS.</p>
+                    </article>
+                    <article class="skill-block fade-up">
+                        <h3>Data y DevOps</h3>
+                        <p>PostgreSQL, MySQL, Redis, Docker, AWS, GitHub Actions.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <header class="section-header fade-up">
+                    <p class="eyebrow">Portfolio tecnico</p>
+                    <h2>Proyectos destacados</h2>
+                </header>
+                <div id="projects-container" class="projects-grid">
+                    <div class="loading">Cargando proyectos...</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-muted">
+            <div class="container contact-panel fade-up">
+                <div>
+                    <p class="eyebrow">Contacto</p>
+                    <h2>Estoy abierto a roles backend/full stack y proyectos remotos.</h2>
                     <p>
-                        Mi enfoque está en construir productos que no solo funcionen bien, sino que también proporcionen
-                        una excelente experiencia de usuario y sean mantenibles a largo plazo.
+                        Si queres colaborar o contratarme, escribime por email o LinkedIn.
                     </p>
                 </div>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <h3 id="projects-count">0+</h3>
-                        <p>Proyectos</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>5+</h3>
-                        <p>Tecnologías</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>100%</h3>
-                        <p>Dedicación</p>
-                    </div>
+                <div class="contact-actions">
+                    <a class="btn btn-primary" href="mailto:enribobadill96@gmail.com">Enviar email</a>
+                    <a class="btn btn-ghost" href="https://linkedin.com/in/enriquejbrdyop007n" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <footer class="site-footer">
         <div class="container">
-            <h2 class="section-title">Stack Tecnológico</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Angular</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">Ionic</span>
-                        <span class="skill-tag">Tailwind CSS</span>
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">JavaScript</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">NestJS</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">Prisma</span>
-                        <span class="skill-tag">Redis</span>
-                        <span class="skill-tag">REST API</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>DevOps & Tools</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Nx Monorepo</span>
-                        <span class="skill-tag">CI/CD</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Proyectos Destacados</h2>
-            <div id="projects-container" class="projects-grid">
-                <!-- Projects will be loaded dynamically -->
-                <div class="loading">Cargando proyectos...</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contacto</h2>
-            <div class="contact-content">
-                <p>Disponible para oportunidades remotas que combinen desafío técnico y crecimiento profesional.</p>
-                <div class="contact-grid">
-                    <a href="mailto:enribobadill96@gmail.com" target="_blank" class="contact-card">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                        </svg>
-                        <h3>Email</h3>
-                        <p>enribobadill96@gmail.com</p>
-                    </a>
-                    <a href="https://linkedin.com/in/enriquejbrdyop007n" target="_blank" class="contact-card">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                        </svg>
-                        <h3>LinkedIn</h3>
-                        <p>enriquejbrdyop007n</p>
-                    </a>
-                    <a href="https://github.com/Yop007N" target="_blank" class="contact-card">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                        <h3>GitHub</h3>
-                        <p>Yop007N</p>
-                    </a>
-                    <div class="contact-card">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                        </svg>
-                        <h3>Ubicación</h3>
-                        <p>Ciudad del Este, Paraguay</p>
-                        <p class="remote-badge">Disponible 100% Remoto</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Enrique B. | Full-Stack Developer</p>
+            <p>&copy; 2026 Enrique Bobadilla. Built with focus on clarity and impact.</p>
         </div>
     </footer>
 
