@@ -281,6 +281,71 @@ body {
     max-width: 24ch;
 }
 
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.experience-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 1.2rem;
+    box-shadow: 0 12px 28px rgba(17, 33, 44, 0.08);
+}
+
+.experience-top {
+    margin-bottom: 0.75rem;
+}
+
+.experience-top h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.08rem;
+    line-height: 1.3;
+    margin-bottom: 0.2rem;
+}
+
+.experience-top p {
+    color: var(--ink-soft);
+    font-weight: 700;
+}
+
+.experience-top span {
+    display: inline-block;
+    margin-top: 0.35rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--teal-dark);
+    border: 1px solid rgba(15, 118, 110, 0.24);
+    border-radius: 999px;
+    padding: 0.2rem 0.55rem;
+    background: rgba(15, 118, 110, 0.08);
+}
+
+.experience-card ul {
+    list-style: none;
+    display: grid;
+    gap: 0.45rem;
+}
+
+.experience-card li {
+    position: relative;
+    padding-left: 1rem;
+    color: var(--ink-soft);
+}
+
+.experience-card li::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--amber);
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+}
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -479,6 +544,7 @@ body {
 
 @media (max-width: 980px) {
     .hero-grid,
+    .experience-grid,
     .skills-grid,
     .stats-grid,
     .contact-panel {
